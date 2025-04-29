@@ -5,5 +5,5 @@
 
 ## Contributors
 - **Hemang Bansal**
-- **Aushka Bansal**
-
+- **Anushka Bansal**
+- **Aditya Goyal**
