@@ -1,4 +1,8 @@
-# datascience-project
+# Data Science Project
 
-DataSetLink
-https://drive.google.com/drive/folders/1TVdwgZptrGx7t5V6Qz47SIShALgLIGt7?usp=sharing
+## Dataset Link
+[Access the Dataset](https://drive.google.com/drive/folders/1TVdwgZptrGx7t5V6Qz47SIShALgLIGt7?usp=sharing)
+
+## Contributors
+- **Hemang Bansal** 
+
