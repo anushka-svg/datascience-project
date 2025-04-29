@@ -594,7 +594,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 import matplotlib.pyplot as plt
-from google.colab.patches import cv2_imshow  # Add this at the top
+from google.colab.patches import cv2_imshow  
 
 # Load your trained model
 model = load_model("sign_language_mnist_cnn.h5")
@@ -636,10 +636,10 @@ cv2.destroyAllWindows()
 
 # Choose the most stable frame
 if len(frame_buffer) == 0:
-    print("❌ No frames found!")
+    print(" No frames found!")
     best_frame = None
 elif len(diff_scores) == 0:
-    print("⚠️ Not enough variation. Using last frame.")
+    print("⚠ Not enough variation. Using last frame.")
     best_frame = frame_buffer[-1]
 else:
     stable_index = np.argmin(diff_scores) + 1
@@ -661,7 +661,7 @@ if best_frame is not None:
     labels_map = [chr(i) for i in range(65, 91) if chr(i) not in ['J', 'Z']]
     predicted_letter = labels_map[predicted_class]
 
-    print(f"✅ Predicted Sign: {predicted_letter}")
+    print(f"Predicted Sign: {predicted_letter}")
     print("Prediction probabilities:", prediction)
     print(f"Prediction confidence: {np.max(prediction):.2f}")
 
@@ -676,4 +676,4 @@ if best_frame is not None:
     plt.axis('off')
     plt.show()
 else:
-    print("❌ No stable frame selected.")
+    print("No stable frame selected.")
